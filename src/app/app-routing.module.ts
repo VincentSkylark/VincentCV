@@ -1,6 +1,5 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {ContactComponent} from './modules/contact/component/contact.component';
 import {PortfolioComponent} from './modules/portfolio/component/portfolio.component';
 import {ResumeComponent} from './modules/resume/component/resume.component';
 import {AppComponent} from './app.component';
@@ -24,10 +23,6 @@ export const routeConfig: Routes = [
   {
     path: 'about-me',
     component: AboutMeComponent
-  },
-  {
-    path: 'contact',
-    component: ContactComponent
   },
   {
     path: 'portfolio',

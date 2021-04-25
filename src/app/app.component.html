@@ -1,24 +1,8 @@
-<div class="navbar-container">
-  <div class="navbar-link-col">
-    <ul class="nav navbar-nav">
-      <li class="nav-item"><a class="nav-link" routerLink="home" routerLinkActive="active-nav"><span class="nav-icon bi-house-door"></span><span class="link-text">Home</span></a></li>
-      <li class="nav-item"><a class="nav-link" routerLink="about-me" routerLinkActive="active-nav"><span class="nav-icon bi-person"></span><span class="link-text">About Me</span></a></li>
-      <li class="nav-item"><a class="nav-link" routerLink="resume" routerLinkActive="active-nav"><span class="nav-icon bi-journal-check"></span><span class="link-text">Resume</span></a></li>
-      <li class="nav-item"><a class="nav-link" routerLink="portfolio" routerLinkActive="active-nav"><span class="nav-icon bi-file-earmark-code"></span><span class="link-text">Portfolio</span></a></li>
-      <li class="nav-item"><a class="nav-link" routerLink="contact" routerLinkActive="active-nav"><span class="nav-icon bi-telephone-plus"></span><span class="link-text">Contact</span></a></li>
-    </ul>
+<div class="app-container">
+  <div class="nav-container">
+    <app-nav *ngIf="true"></app-nav>
   </div>
-
-  <div class="navbar-avatar-col">
-    <div class="navbar-avatar-container">
-      <img class="avatar-img" alt="avatar-img" src="../assets/VincentAvatar.svg">
-      <h2>Vincent He</h2>
-      <h4>Full-Stack Developer</h4>
-      <a href="#" target="_blank" class="btn btn-outline-light avatar-cv-link">Download CV</a>
-    </div>
+  <div class="page-container">
+      <router-outlet></router-outlet>
   </div>
-</div>
-
-<div class="page-container">
-  <router-outlet></router-outlet>
 </div>
