@@ -1,0 +1,14 @@
+<div class="portfolio-container">
+  <div class="portfolio-description">
+    {{portfolio.description}}
+  </div>
+  <div class="portfolio-images">
+    <ngb-carousel *ngFor="let url of portfolio.imageUrls">
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img [src]="url" alt="Random first slide">
+        </div>
+      </ng-template>
+    </ngb-carousel>
+  </div>
+</div>
